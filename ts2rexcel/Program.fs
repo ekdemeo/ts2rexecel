@@ -50,9 +50,11 @@ let writeLines lines filePath = System.IO.File.WriteAllLines(filePath, lines)
 
 [<EntryPoint>]
 let main argv = 
-    let output = (processTasks <| readLines argv.[0])
-    //printfn "%s" (output  |> Seq.reduce (+))
-    writeLines (Seq.toArray output) argv.[1]
-    printfn "%s" "done."
- 
-    0
+    if (argv.Length <> 3) then 
+        printf "Usage: ts2rexecel.exe inputfile outputfile"
+        0
+    else 
+        let output = (processTasks <| readLines argv.[0])
+        writeLines (Seq.toArray output) argv.[1]
+        printfn "%s" "done."
+        0
