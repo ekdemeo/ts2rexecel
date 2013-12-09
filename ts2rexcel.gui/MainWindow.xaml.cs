@@ -39,8 +39,16 @@ namespace ts2rexcel.gui
                 return;
             }
 
-            var lines = input.Split(new[] {System.Environment.NewLine}, StringSplitOptions.RemoveEmptyEntries).ToList();
-            TxtOutput.Text = string.Join(System.Environment.NewLine, converter.FromTs(lines));
+            try
+            {
+                var lines = input.Split(new[] { System.Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries).ToList();
+                TxtOutput.Text = string.Join(System.Environment.NewLine, converter.FromTs(lines));
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
