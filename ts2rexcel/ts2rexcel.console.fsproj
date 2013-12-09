@@ -8,9 +8,9 @@
     <ProjectGuid>6e52644a-97f8-473c-89bf-6ef64c2de420</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>ts2rexcel</RootNamespace>
-    <AssemblyName>ts2rexcel</AssemblyName>
+    <AssemblyName>ts2rexcel.console</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <Name>ts2rexcel</Name>
+    <Name>ts2rexcel.console</Name>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -48,6 +48,13 @@
   <ItemGroup>
     <Compile Include="Program.fs" />
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ts2rexcel.lib\ts2rexcel.lib.fsproj">
+      <Name>ts2rexcel.lib</Name>
+      <Project>{0295c569-9a13-400b-8a14-c4b49a068ef2}</Project>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>

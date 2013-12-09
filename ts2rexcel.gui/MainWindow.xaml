@@ -1,0 +1,30 @@
+﻿<Window x:Class="ts2rexcel.gui.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ts2rexcel.gui" Height="609.5" Width="775">
+  
+        <Grid Margin="0,4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="41*"/>
+            <ColumnDefinition Width="156*"/>
+            <ColumnDefinition Width="491*"/>
+            <ColumnDefinition Width="79*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+                <RowDefinition Height="95*"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="137*"/>
+            </Grid.RowDefinitions>
+
+
+            <Button x:Name="BtnConvert"  Content="Konwertuj" Margin="11,8,11,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="2.76,-0.545" Height="92" Click="BtnConvert_Click" FontSize="20" Grid.ColumnSpan="4"/>
+     
+        <TextBox x:Name="TxtInput" VerticalScrollBarVisibility="Auto" AcceptsTab="True" HorizontalAlignment="Stretch" TextWrapping="Wrap"   AcceptsReturn="True" Grid.Row="0" Margin="10,30,11,9" Grid.ColumnSpan="4"/>
+
+        <TextBox x:Name="TxtOutput"  VerticalScrollBarVisibility="Auto" VerticalAlignment="Stretch"  HorizontalAlignment="Stretch" AcceptsTab="True" TextWrapping="Wrap" AcceptsReturn="true" Margin="10,30,11,10" Grid.Row="2" Grid.ColumnSpan="4"/>
+        <Label Content="Timesheet" HorizontalAlignment="Left" Margin="8,2,0,0" VerticalAlignment="Top" Height="26" Width="85" Grid.ColumnSpan="2" FontSize="14"/>
+        <Label Content="Rexcel" HorizontalAlignment="Left" Margin="10,4,0,234" Grid.Row="2" RenderTransformOrigin="-5.342,-0.269" Width="83" Grid.ColumnSpan="2" FontSize="14"/>
+
+    </Grid>
+  
+</Window>

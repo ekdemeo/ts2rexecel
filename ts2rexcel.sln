@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ts2rexcel", "ts2rexcel\ts2rexcel.fsproj", "{6E52644A-97F8-473C-89BF-6EF64C2DE420}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ts2rexcel.console", "ts2rexcel\ts2rexcel.console.fsproj", "{6E52644A-97F8-473C-89BF-6EF64C2DE420}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ts2rexcel.gui", "ts2rexcel.gui\ts2rexcel.gui.csproj", "{E2AAF2A2-D4D5-4B28-A1D0-014EE82663AE}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ts2rexcel.lib", "ts2rexcel.lib\ts2rexcel.lib.fsproj", "{0295C569-9A13-400B-8A14-C4B49A068EF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +17,14 @@ Global
 		{6E52644A-97F8-473C-89BF-6EF64C2DE420}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E52644A-97F8-473C-89BF-6EF64C2DE420}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E52644A-97F8-473C-89BF-6EF64C2DE420}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2AAF2A2-D4D5-4B28-A1D0-014EE82663AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2AAF2A2-D4D5-4B28-A1D0-014EE82663AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2AAF2A2-D4D5-4B28-A1D0-014EE82663AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2AAF2A2-D4D5-4B28-A1D0-014EE82663AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0295C569-9A13-400B-8A14-C4B49A068EF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0295C569-9A13-400B-8A14-C4B49A068EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0295C569-9A13-400B-8A14-C4B49A068EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0295C569-9A13-400B-8A14-C4B49A068EF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
