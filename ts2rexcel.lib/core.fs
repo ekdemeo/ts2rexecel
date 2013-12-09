@@ -37,7 +37,7 @@ type TaskGroup(tasks: seq<Task>) =
 
 
 
-   let parseTask (line:string) = let cells = line.Split '\t' in Task(cells.[6], cells.[1],  cells.[0], cells.[2])
+    let parseTask (line:string) = let cells = line.Split '\t' in Task(cells.[6], cells.[1],  cells.[0], cells.[2])
     let tasks lines = seq { for line in lines -> parseTask line }
     let groupTasks tasks = tasks |> Seq.groupBy (fun (x:Task) -> x.TaskName)  |> Seq.map (fun (key, tasks) -> TaskGroup(tasks))
     let processTasks lines = groupTasks <| tasks lines |> Seq.map (fun (x:TaskGroup) -> x.Print)

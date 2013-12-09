@@ -27,8 +27,6 @@ namespace ts2rexcel.gui
             InitializeComponent();
             
             converter = new RexcelConverter();
-
-            //converter.FromTs()
         }
 
         private void BtnConvert_Click(object sender, RoutedEventArgs e)
@@ -42,9 +40,7 @@ namespace ts2rexcel.gui
             }
 
             var lines = input.Split(new[] {System.Environment.NewLine}, StringSplitOptions.RemoveEmptyEntries).ToList();
-
-            var result = converter.FromTs(lines);
-            TxtOutput.Text = string.Join(System.Environment.NewLine, result);
+            TxtOutput.Text = string.Join(System.Environment.NewLine, converter.FromTs(lines));
         }
     }
 }
